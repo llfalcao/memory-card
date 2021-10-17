@@ -6,25 +6,39 @@ import CardContainer from './components/CardContainer';
 import cardData from './assets/cards/cards';
 
 function App() {
-  const [score, setScore] = useState(0);
-  const [bestScore, setBestScore] = useState(0);
+  const [score, setScore] = useState({ current: 0, best: 0 });
   const [cards, setCards] = useState(cardData);
 
-  const incrementScore = () => {};
+  if (score.current > score.best) {
+    setScore({ ...score, best: score.current });
+  }
 
-  const resetGame = () => {};
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  const incrementScore = () =>
+    setScore({ ...score, current: score.current + 1 });
+
+  const resetGame = () => {
+    cardData.map((card) => (card.isClicked = false));
+    setCards(cardData);
+    setScore({ ...score, current: 0 });
+  };
 
   const handleCardClick = (e) => {
-    const card = e.target.closest('.card');
-    const { id } = card.dataset;
+    const { id } = e.target.dataset;
     const index = cards.findIndex((card) => card.id === id);
     if (cards[index].isClicked) {
       resetGame();
       return;
     }
-
     const newCards = [...cards];
     newCards[index].isClicked = true;
+    shuffleArray(newCards);
     setCards(newCards);
     incrementScore();
   };
@@ -32,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Scoreboard score={score} bestScore={bestScore} />
+      <Scoreboard score={score.current} bestScore={score.best} />
       <CardContainer cards={cards} onClick={handleCardClick} />
     </div>
   );
