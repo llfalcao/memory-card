@@ -3,7 +3,7 @@ import * as S from './styles';
 
 const Scoreboard = () => {
   return (
-    <S.Container>
+    <S.Container id="scoreboard">
       <S.Score>
         <span>Score:</span> <span>12</span>
       </S.Score>
