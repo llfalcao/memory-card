@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ImageContainer = styled.div`
   display: block;
-  margin: 15px auto;
+  margin: 15px auto 0;
   width: 150px;
   height: 150px;
   background: #c4c4c4;

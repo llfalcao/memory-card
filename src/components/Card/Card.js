@@ -3,11 +3,11 @@ import Image from '../Image';
 import * as S from './styles';
 
 const Card = (props) => {
-  const { text } = props;
+  const { image: src, text } = props;
 
   return (
     <S.Card>
-      <Image />
+      <Image src={src} alt={text} />
       <S.Legend>{text}</S.Legend>
     </S.Card>
   );

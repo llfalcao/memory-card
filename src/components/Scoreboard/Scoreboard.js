@@ -1,15 +1,18 @@
 import React from 'react';
 import * as S from './styles';
 
-const Scoreboard = () => {
+const Scoreboard = (props) => {
+  const { score } = props;
+  const { bestScore } = props;
+
   return (
     <S.Container id="scoreboard">
       <S.Score>
-        <span>Score:</span> <span>12</span>
+        <span>Score:</span> <span>{score}</span>
       </S.Score>
 
       <S.Score>
-        <span>Best Score:</span> <span>12</span>
+        <span>Best Score:</span> <span>{bestScore}</span>
       </S.Score>
     </S.Container>
   );

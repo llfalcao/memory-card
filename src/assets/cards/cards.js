@@ -1,94 +1,95 @@
 import { v4 as uuidv4 } from 'uuid';
+import * as Image from './images';
 
 const cards = [
   {
     id: uuidv4(),
-    src: '../images/01.jpg',
+    src: Image.img01,
     text: 'Bronn',
   },
   {
     id: uuidv4(),
-    src: '../images/02.jpg',
+    src: Image.img02,
     text: 'Sansa Stark',
   },
   {
     id: uuidv4(),
-    src: '../images/03.jpg',
+    src: Image.img03,
     text: 'Lord Varys',
   },
   {
     id: uuidv4(),
-    src: '../images/04.jpg',
+    src: Image.img04,
     text: 'Cersei Lannister',
   },
   {
     id: uuidv4(),
-    src: '../images/05.jpg',
+    src: Image.img05,
     text: 'Jaime Lannister',
   },
   {
     id: uuidv4(),
-    src: '../images/06.jpg',
+    src: Image.img06,
     text: 'Jon Snow',
   },
   {
     id: uuidv4(),
-    src: '../images/07.jpg',
+    src: Image.img07,
     text: 'Tyrion Lannister',
   },
   {
     id: uuidv4(),
-    src: '../images/08.jpg',
+    src: Image.img08,
     text: 'Davos Seaworth',
   },
   {
     id: uuidv4(),
-    src: '../images/09.jpg',
+    src: Image.img09,
     text: 'Brienne of Tarth',
   },
   {
     id: uuidv4(),
-    src: '../images/10.jpg',
+    src: Image.img10,
     text: 'Sandor Clegane',
   },
   {
     id: uuidv4(),
-    src: '../images/11.jpg',
+    src: Image.img11,
     text: 'Daenerys Targaryen',
   },
   {
     id: uuidv4(),
-    src: '../images/12.jpg',
+    src: Image.img12,
     text: 'Bran Stark',
   },
   {
     id: uuidv4(),
-    src: '../images/13.jpg',
+    src: Image.img13,
     text: 'Arya Stark',
   },
   {
     id: uuidv4(),
-    src: '../images/14.jpg',
+    src: Image.img14,
     text: 'Joffrey Baratheon',
   },
   {
     id: uuidv4(),
-    src: '../images/15.jpg',
+    src: Image.img15,
     text: 'Theon Greyjoy',
   },
   {
     id: uuidv4(),
-    src: '../images/16.jpg',
+    src: Image.img16,
     text: 'Night King',
   },
   {
     id: uuidv4(),
-    src: '../images/17.jpg',
+    src: Image.img17,
     text: 'Tormund Giantsbane ',
   },
   {
     id: uuidv4(),
-    src: '../images/18.jpg',
+    src: Image.img18,
     text: 'Samwell Tarly',
   },
 ];
