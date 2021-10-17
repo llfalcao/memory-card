@@ -1,9 +1,12 @@
 import './App.css';
+import Header from './components/Header';
+import Scoreboard from './components/Scoreboard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <Header />
+      <Scoreboard />
     </div>
   );
 }
