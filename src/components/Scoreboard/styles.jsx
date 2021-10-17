@@ -9,11 +9,17 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: default;
+  transition: 0.1s ease-out;
+
+  &:hover {
+    filter: none;
+    transform: translateY(3px);
+  }
 `;
 
 export const Score = styled.div`
   font: normal calc(5px + 2vmin) Manrope;
   color: #ffffff;
   padding-bottom: 0.2rem;
-  /* line-height: 3.55rem; */
 `;
