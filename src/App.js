@@ -10,11 +10,30 @@ function App() {
   const [bestScore, setBestScore] = useState(0);
   const [cards, setCards] = useState(cardData);
 
+  const incrementScore = () => {};
+
+  const resetGame = () => {};
+
+  const handleCardClick = (e) => {
+    const card = e.target.closest('.card');
+    const { id } = card.dataset;
+    const index = cards.findIndex((card) => card.id === id);
+    if (cards[index].isClicked) {
+      resetGame();
+      return;
+    }
+
+    const newCards = [...cards];
+    newCards[index].isClicked = true;
+    setCards(newCards);
+    incrementScore();
+  };
+
   return (
     <div className="App">
       <Header />
       <Scoreboard score={score} bestScore={bestScore} />
-      <CardContainer cards={cards} />
+      <CardContainer cards={cards} onClick={handleCardClick} />
     </div>
   );
 }
