@@ -8,6 +8,7 @@ export const ImageContainer = styled.div`
   background: #c4c4c4;
   border-radius: 11px;
   overflow: hidden;
+  pointer-events: none;
 `;
 
 export const Image = styled.img`
