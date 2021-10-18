@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.20bdbcab.chunk.css",
+    "main.js": "/memory-card/static/js/main.2195aa51.chunk.js",
+    "main.js.map": "/memory-card/static/js/main.2195aa51.chunk.js.map",
+    "runtime-main.js": "/memory-card/static/js/runtime-main.714dd9e2.js",
+    "runtime-main.js.map": "/memory-card/static/js/runtime-main.714dd9e2.js.map",
+    "static/js/2.23c039cc.chunk.js": "/memory-card/static/js/2.23c039cc.chunk.js",
+    "static/js/2.23c039cc.chunk.js.map": "/memory-card/static/js/2.23c039cc.chunk.js.map",
+    "index.html": "/memory-card/index.html",
+    "static/css/main.20bdbcab.chunk.css.map": "/memory-card/static/css/main.20bdbcab.chunk.css.map",
+    "static/js/2.23c039cc.chunk.js.LICENSE.txt": "/memory-card/static/js/2.23c039cc.chunk.js.LICENSE.txt",
+    "static/media/01.468665dd.jpg": "/memory-card/static/media/01.468665dd.jpg",
+    "static/media/02.9e4be3ee.jpg": "/memory-card/static/media/02.9e4be3ee.jpg",
+    "static/media/03.bf71fa60.jpg": "/memory-card/static/media/03.bf71fa60.jpg",
+    "static/media/04.47141e42.jpg": "/memory-card/static/media/04.47141e42.jpg",
+    "static/media/05.6e1c5ff1.jpg": "/memory-card/static/media/05.6e1c5ff1.jpg",
+    "static/media/06.eeefe940.jpg": "/memory-card/static/media/06.eeefe940.jpg",
+    "static/media/07.90e1d664.jpg": "/memory-card/static/media/07.90e1d664.jpg",
+    "static/media/08.b9ba94e6.jpg": "/memory-card/static/media/08.b9ba94e6.jpg",
+    "static/media/09.0c41bb9a.jpg": "/memory-card/static/media/09.0c41bb9a.jpg",
+    "static/media/10.86513165.jpg": "/memory-card/static/media/10.86513165.jpg",
+    "static/media/11.54862fce.jpg": "/memory-card/static/media/11.54862fce.jpg",
+    "static/media/12.2c2205be.jpg": "/memory-card/static/media/12.2c2205be.jpg",
+    "static/media/13.ff92cd27.jpg": "/memory-card/static/media/13.ff92cd27.jpg",
+    "static/media/14.3d136536.jpg": "/memory-card/static/media/14.3d136536.jpg",
+    "static/media/15.f1905f65.jpg": "/memory-card/static/media/15.f1905f65.jpg",
+    "static/media/16.173b1aba.jpg": "/memory-card/static/media/16.173b1aba.jpg",
+    "static/media/17.23bc95d8.jpg": "/memory-card/static/media/17.23bc95d8.jpg",
+    "static/media/18.dfa0ad18.jpg": "/memory-card/static/media/18.dfa0ad18.jpg",
+    "static/media/restart.c5a61fc1.svg": "/memory-card/static/media/restart.c5a61fc1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.714dd9e2.js",
+    "static/js/2.23c039cc.chunk.js",
+    "static/css/main.20bdbcab.chunk.css",
+    "static/js/main.2195aa51.chunk.js"
+  ]
+}
