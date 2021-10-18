@@ -4,19 +4,14 @@ export const Card = styled.div`
   width: 180px;
   height: 205px;
   background: #f1f1f1;
-  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 5px 2px rgb(0, 0, 0, 0.1);
   border-radius: 25px;
   cursor: pointer;
   transition: 0.2s ease-out;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 
   &:hover {
-    box-shadow: 0px 4px 3px 0px #f46565;
+    box-shadow: 0px 4px 3px 0px #f4656590;
   }
 
   &:active {

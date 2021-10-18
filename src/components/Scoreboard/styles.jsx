@@ -11,6 +11,7 @@ export const Container = styled.div`
   align-items: center;
   cursor: default;
   transition: 0.1s ease-out;
+  z-index: 1000;
 
   &:hover {
     filter: none;
