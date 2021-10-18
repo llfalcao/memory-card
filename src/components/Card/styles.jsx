@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
   width: 180px;
-  height: auto;
+  height: 205px;
   background: linear-gradient(to bottom, #ece9ff, #f1f1f100);
   box-shadow: 0px 2px 10px 2px rgb(0, 0, 0, 0.1);
   border-radius: 20px;
