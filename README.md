@@ -1,6 +1,6 @@
 # Memory Card
 
-Memory game made using React with Styled Components. Players get points by clicking on the cards as long as they don't click them twice, otherwise the score resets.
+Memory game made using React with Styled Components proposed in [The Odin Project](https://www.theodinproject.com). Players get points by clicking on the cards as long as they don't click them twice, otherwise the score resets.
 
 Link: https://llfalcao.github.io/memory-card
 
