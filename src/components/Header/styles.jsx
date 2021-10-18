@@ -22,4 +22,10 @@ export const Paragraph = styled.p`
     sans-serif;
   color: #444;
   margin: 1rem 0 1.5rem;
+
+  @media (max-width: 550px) {
+    max-width: 300px;
+    font-size: 1rem;
+    display: block;
+  }
 `;
