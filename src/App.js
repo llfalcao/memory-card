@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Scoreboard from './components/Scoreboard';
 import CardContainer from './components/CardContainer';
+import Modal from './components/Modal';
 import cardData from './assets/cards/cards';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <Header />
       <Scoreboard score={score.current} bestScore={score.best} />
       <CardContainer cards={cards} onClick={handleCardClick} />
+      {score.best === cards.length ? <Modal /> : null}
     </div>
   );
 }
