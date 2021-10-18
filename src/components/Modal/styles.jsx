@@ -6,7 +6,8 @@ export const Modal = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   background: #0c152df8;
-  padding: 3rem 5rem;
+  width: 220px;
+  padding: 2rem 0;
   border-radius: 10px;
   animation: slide 0.5s ease-out;
   filter: drop-shadow(0px 4px 0px #f46565);
@@ -26,6 +27,8 @@ export const Modal = styled.div`
 
 export const Content = styled.p`
   font: normal calc(10px + 2vmin) Manrope;
+  width: max-content;
+  margin: auto;
 `;
 
 export const Overlay = styled.div`
