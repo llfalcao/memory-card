@@ -24,10 +24,14 @@ const App = () => {
   const incrementScore = () =>
     setScore({ ...score, current: score.current + 1 });
 
-  const resetGame = () => {
+  const resetGame = (clearAll) => {
     cardData.map((card) => (card.isClicked = false));
     setCards(cardData);
-    setScore({ ...score, current: 0 });
+    if (clearAll) {
+      setScore({ ...score, current: 0, best: 0 });
+    } else {
+      setScore({ ...score, current: 0 });
+    }
   };
 
   const handleCardClick = (e) => {
@@ -49,7 +53,7 @@ const App = () => {
       <Header />
       <Scoreboard score={score.current} bestScore={score.best} />
       <CardContainer cards={cards} onClick={handleCardClick} />
-      {score.best === cards.length ? <Modal /> : null}
+      {score.best === cards.length ? <Modal resetGame={resetGame} /> : null}
     </div>
   );
 };
