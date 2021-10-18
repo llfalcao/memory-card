@@ -7,7 +7,7 @@ export const Card = styled.div`
   box-shadow: 0px 4px 5px 2px rgb(0, 0, 0, 0.1);
   border-radius: 25px;
   cursor: pointer;
-  transition: 0.2s ease-out;
+  transition: transform 0.1s ease-out;
   user-select: none;
 
   &:hover {

@@ -6,7 +6,7 @@ import CardContainer from './components/CardContainer';
 import Modal from './components/Modal';
 import cardData from './assets/cards/cards';
 
-function App() {
+const App = () => {
   const [score, setScore] = useState({ current: 0, best: 0 });
   const [cards, setCards] = useState(cardData);
 
@@ -52,6 +52,6 @@ function App() {
       {score.best === cards.length ? <Modal /> : null}
     </div>
   );
-}
+};
 
 export default App;
