@@ -10,17 +10,3 @@
   color: white;
   overflow: hidden;
 }
-
-.App::before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  width: 95%;
-  height: 1200px;
-  border-radius: 100%;
-  transform: translateY(60%);
-  background: #4682b466;
-  mix-blend-mode: normal;
-  filter: blur(300px);
-  z-index: -1;
-}
