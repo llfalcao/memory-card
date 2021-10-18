@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const Header = styled.header`
   text-align: center;
+
+  @media (min-width: 1921px) {
+    margin-bottom: 3rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -14,6 +18,10 @@ export const Title = styled.h1`
 export const Subtitle = styled.h2`
   font: bold calc(4px + 2vmin) Manrope;
   color: #00000095;
+
+  @media (min-width: 1921px) {
+    font-size: 1.8vmin;
+  }
 `;
 
 export const Paragraph = styled.p`
