@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Scoreboard from './components/Scoreboard';
@@ -10,9 +10,11 @@ const App = () => {
   const [score, setScore] = useState({ current: 0, best: 0 });
   const [cards, setCards] = useState(cardData);
 
-  if (score.current > score.best) {
-    setScore({ ...score, best: score.current });
-  }
+  useEffect(() => {
+    if (score.current > score.best) {
+      setScore({ ...score, best: score.current });
+    }
+  }, [score]);
 
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
